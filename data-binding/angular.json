@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "9c7e8e9b-a9b3-4871-91c6-1932dae1c0f5"
+    "analytics": "49986879-d6d9-4c65-897a-fbaaee6ddba3"
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -9,6 +9,9 @@
     "data-binding": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -25,12 +28,13 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -92,12 +96,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
