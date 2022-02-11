@@ -1,0 +1,33 @@
+<!--perguntar para alguem-->
+<section class="property -binding">
+    <article>
+        <h3>Interpolaton / Interpolação</h3>
+        <p>String renderizada com interpolação : {{url}}</p>
+        <p>resultado de 1 + 1 é : {{1+1}}</p>
+        <p>resultado de 1 + 1 é : {{1+1+getValor()}}</p>
+        <p>Curso de Angular e gosto do curso: {{cursoAngular && getCurtirCurso()}}</p>
+    </article>
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{url1}}">
+        <img [src]="url1">
+        <img bind-src="url1">
+    </article>
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>
+            Selecione uma classe:
+            <section #classe (change)="0">
+                <option value="alert-success"></option>
+                <option value="alert-info"></option>
+                <option value="alert-warning"></option>
+                <option value="alert-danger"></option>
+            </section>
+            <br><br>
+            <div class="alert" role="alert"[class.alert-success]="classe.value=='alert-success'">...</div>
+            <div class="alert alert-info" role="alert">...</div>
+            <div class="alert alert-warning" role="alert">...</div>
+            <div class="alert alert-danger" role="alert">...</div>
+        </div>
+    </article>
+</section>
