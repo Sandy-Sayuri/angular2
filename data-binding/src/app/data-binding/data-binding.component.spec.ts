@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DataBindingComponent } from './data-binding.component';
 
 describe('DataBindingComponent', () => {
