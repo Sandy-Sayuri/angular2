@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
     valorAtual:string='';
-    valorSalvo;
+    valorSalvo:any;
     url:string='https://www.cursoemvideo.com/';
     cursoAngular:boolean=true;
     url1='http://lorempixel.com.br/400/200';
