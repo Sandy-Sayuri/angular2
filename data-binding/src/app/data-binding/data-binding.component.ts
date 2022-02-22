@@ -1,15 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
+import { InputPropertyComponent } from '../input-property/input-property.component';
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
   //styleUrls: ['./data-binding.component.css'],
-  styles:[
-    `.highlight{
-      background-color: yellow;
-      font-weight: bold;
-  }`
-  ]
 
 })
 export class DataBindingComponent implements OnInit {
@@ -18,6 +12,7 @@ export class DataBindingComponent implements OnInit {
     url:string='https://www.cursoemvideo.com/';
     cursoAngular:boolean=true;
     url1='http://lorempixel.com.br/400/200';
+    nomeDoCurso:string='Angular';
     isMouseOver:boolean=false;
     getValor(){
       return 1;
