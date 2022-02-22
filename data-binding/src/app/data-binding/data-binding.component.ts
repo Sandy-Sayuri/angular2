@@ -3,7 +3,7 @@ import { InputPropertyComponent } from '../input-property/input-property.compone
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  //styleUrls: ['./data-binding.component.css'],
+  styleUrls: ['./data-binding.component.css'],
 
 })
 export class DataBindingComponent implements OnInit {
@@ -14,6 +14,7 @@ export class DataBindingComponent implements OnInit {
     url1='http://lorempixel.com.br/400/200';
     nomeDoCurso:string='Angular';
     isMouseOver:boolean=false;
+    valorInicial=15;
     getValor(){
       return 1;
     }
