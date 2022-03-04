@@ -14,6 +14,7 @@ export class DataBindingComponent implements OnInit {
     url1='http://lorempixel.com.br/400/200';
     nomeDoCurso:string='Angular';
     isMouseOver:boolean=false;
+    nome:string= 'abc';
     valorInicial=15;
     getValor(){
       return 1;
